@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jiewa Studio</title>
+    <link rel="icon" href="logojiewa.png" type="image/svg+xml">
+</head>
+
+<body>
+<!-- NAVBAR -->
+    <header class="bg-white">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- Logo di sebelah kiri -->
+          <div>
+            <a class="block text-teal-600" href="#">
+              <span class="sr-only">Home</span>
+              <img class="h-8" src="logojiewa.png" alt="Djiewa Studio Logo">
+            </a>
+          </div>
+    
+          <!-- Navigasi di tengah -->
+          <div class="flex-grow hidden md:flex justify-center">
+            <nav aria-label="Global">
+                <ul class="flex gap-6 text-sm">
+                    <li>
+                      <a class="text-gray-500 transition hover:text-gray-500/75" href="index.html"> Home </a>
+                    </li>
+                    <li>
+                      <a class="text-gray-500 transition hover:text-gray-500/75" href="about.html"> About </a>
+                    </li>
+                    <li>
+                      <a class="text-gray-500 transition hover:text-gray-500/75" href="gallery.html"> Gallery </a>
+                    </li>
+                    <li>
+                      <a class="text-gray-500 transition hover:text-gray-500/75" href="pricelist.html"> Pricelist </a>
+                    </li>
+                    <li>
+                      <a class="text-gray-500 transition hover:text-gray-500/75" href="formbooking.html"> Booking </a>
+                    </li>
+                </ul>
+                </nav>
+          </div>
+    
+          <!-- Placeholder untuk elemen lainnya di sebelah kanan jika ada -->
+          <div class="hidden md:block">
+            <!-- Elemen lain di sini jika dibutuhkan -->
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- END NAVBAR -->
+<!-- Form -->
+  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-lg">
+    <h1 class="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Ayo Booking Sekarang!</h1>
+
+    <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
+      Isi Formulir ini untuk Booking Jiewa Studio!
+    </p>
+
+    <form action="#" class="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+      <p class="text-center text-lg font-medium">Form Booking</p>
+
+      <!-- Nama -->
+      <div>
+        <label for="name" class="block text-gray-700">Nama :</label>
+        <input
+          type="text"
+          name="nama"
+          id="nama"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Alamat -->
+      <div>
+        <label for="Alamat" class="block text-gray-700">Alamat :</label>
+        <input
+          type="text"
+          name="Alamat"
+          id="Alamat"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Instagram -->
+      <div>
+        <label for="instagram" class="block text-gray-700">Instagram :</label>
+        <input
+          type="text"
+          name="instagram"
+          id="instagram"
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Mengetahui Kami melalui -->
+      <div>
+        <label for="referral" class="block text-gray-700">Mengetahui Kami melalui :</label>
+        <input
+          type="text"
+          name="referral"
+          id="referral"
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Kebutuhan Fotografi -->
+      <div>
+        <label for="Kebutuhan_Fotografi" class="block text-gray-700">Kebutuhan Fotografi :</label>
+        <textarea
+          name="Kebutuhan_Fotografi"
+          id="Kebutuhan_Fotografi"
+          rows="3"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+      </div>
+
+      <!-- Pilih Layanan -->
+      <div>
+        <label for="service" class="block text-gray-700">Pilih Layanan :</label>
+        <select
+          name="service"
+          id="service"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="Personal Session">Personal Session</option>
+          <option value="Couple Session">Couple Session</option>
+          <option value="Group Session">Group Session</option>
+          <option value="Product Session">Product Session</option>
+          <option value="Company Session">Company Session</option>
+        </select>
+      </div>
+
+      <!-- Pilih Tanggal -->
+      <div>
+        <label for="date" class="block text-gray-700">Pilih Tanggal :</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
+      <!-- Pilih Waktu -->
+      <div>
+        <label for="time" class="block text-gray-700">Pilih Waktu :</label>
+        <select
+          name="time"
+          id="time"
+          required
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="08:00:00">8:00 AM - 9:00 AM</option>
+          <option value="09:00:00">9:00 AM - 10:00 AM</option>
+          <option value="10:00:00">10:00 AM - 11:00 AM</option>
+          <option value="11:00:00">11:00 AM - 12:00 PM</option>
+          <option value="12:00:00">12:00 PM - 1:00 PM</option>
+          <option value="13:00:00">1:00 PM - 2:00 PM</option>
+          <option value="14:00:00">2:00 PM - 3:00 PM</option>
+          <option value="15:00:00">3:00 PM - 4:00 PM</option>
+          <option value="16:00:00">4:00 PM - 5:00 PM</option>
+          <option value="17:00:00">5:00 PM - 6:00 PM</option>
+        </select>
+      </div>
+
+      <button
+        type="submit"
+        class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+      >
+        Booking
+      </button>
+
+      <p class="text-center text-sm text-gray-500">
+        Ada Pertanyaan?
+        <a class="underline" href="#">Whatsapp</a>
+      </p>
+    </form>
+  </div>
+  </div>
+
+<!-- END FORM -->
+
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fetch booked dates from the server with a cache-busting query parameter
+        const url = 'get_booked_dates.php?' + new Date().getTime(); // Cache-busting
+        fetch(url)
+            .then(response => response.json())
+            .then(bookedDates => {
+                // Get the date and time input elements
+                const dateInput = document.getElementById('date');
+                const timeInput = document.getElementById('time');
+
+                // Disable unavailable dates and times
+                dateInput.addEventListener("input", function() {
+                    const selectedDate = this.value;
+                    if (bookedDates[selectedDate]) {
+                        // Disable times that are already booked for the selected date
+                        const availableTimes = bookedDates[selectedDate];
+                        Array.from(timeInput.options).forEach(option => {
+                            if (availableTimes.includes(option.value)) {
+                                option.disabled = true; // Disable this time
+                            } else {
+                                option.disabled = false; // Enable this time
+                            }
+                        });
+                    } else {
+                        // If no bookings for the selected date, enable all times
+                        Array.from(timeInput.options).forEach(option => {
+                            option.disabled = false;
+                        });
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching booked dates:', error));
+    });
+  </script>
+
+ 
+  </body>
+<!-- FOOTER -->
+<footer class="bg-gray-100">
+      <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex justify-center text-teal-600">
+        <img class="h-8" src="logojiewa.png" alt="Djiewa Studio Logo">
+        </div>
+        <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
+          itaque neque.
+        </p>
+    
+        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
+          </li>
+    
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
+          </li>
+    
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> History </a>
+          </li>
+    
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
+          </li>
+    
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Projects </a>
+          </li>
+    
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Blog </a>
+          </li>
+        </ul>
+    
+        <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+          
+          <li>
+            <a
+              href="https://wa.me/6281315538658"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-gray-700/75"
+            >
+              <span class="sr-only">Whatsapp</span>
+              <img src="whatsapp icon.svg" alt="Whatsapp" class="w-6 h-6" />
+            </a>
+          </li>
+        
+          <li>
+            <a
+              href="https://www.instagram.com/jiewastudio/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-gray-700/75"
+            >
+              <span class="sr-only">Instagram</span>
+              <img src="instagram icon.svg" alt="Instagram" class="w-6 h-6" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://maps.app.goo.gl/9A5EMLcQHt8KaCfh6"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:text-gray-700/75"
+            >
+              <span class="sr-only">Lokasi</span>
+              <img src="icon lokasi.svg" alt="Gmaps" class="w-6 h-6" />
+            </a>
+          </li>
+        </ul>
+        
+        <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+          Copyright &copy; 2024. Jiewa Visual.
+        </p>
+      </div>
+    </footer>
+<!-- END FOOTER-->
